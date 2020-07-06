@@ -1,3 +1,5 @@
+import './assets/style/main.scss'
+
 const influencers = [
   {
     id: 1,
