@@ -1,0 +1,14 @@
+%standard-boxshadow {
+  box-shadow: 3px 0 13px 0 rgba(100, 112, 134, 0.1);
+}
+
+%input-style {
+  font-size: 16px;
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+  padding: 0.5em;
+  &:hover,
+  &:focus {
+    border: 1px solid $dark-gray;
+  }
+}
