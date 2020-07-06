@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main-app">
+    <nav class="d-flex flex-column justify-content-between align-items-center">
+      <div class="menu d-flex flex-column">
+        <a href="#" class="text-center">AC</a>
+        <a href="#"><i class="fas fa-ad"></i></a>
+      </div>
+      <div class="user-center">
+        <a href="#"><i class="fas fa-user-circle"></i></a>
+      </div>
+    </nav>
+    <main id="main-content">
+      <div id="card-list" class="card-list-panel py-4 d-flex flex-column align-items-center scrollbar">
+        <h4>網紅列表</h4>
+      </div>
+      <div class="right-content">
+        <div id="step-control" class="stepper-panel">
+          <div class="container stepper-container">
+            <div class="step active">
+              <div class="circle-container"></div>
+              <div class="label-container">啟用廣告服務</div>
+            </div>
+            <div class="step">
+              <div class="circle-container"></div>
+              <span class="connect-line"></span>
+              <div class="label-container">廣告設定</div>
+            </div>
+            <div class="step">
+              <div class="circle-container"></div>
+              <span class="connect-line"></span>
+              <div class="label-container">付款帳號設定</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-panel scrollbar">
+          <div class="container form-container">
+            <form id="a-form" class="d-flex flex-column">
+              <div class="form-content">
+                <div class="part">
+                  <h4 class="mb-2">廣告服務條款</h4>
+                  <div class="terms-panel scrollbar mb-4">
+                    <div class="terms-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.</p>
+                    </div>
+                  </div>
+                  <div class="form-row d-flex align-items-center">
+                    <input id="terms-check" type="checkbox">
+                    <label for="">我已詳細閱讀以上條款內容，並同意接受內容所有款項規定</label>
+                  </div>
+                </div>
+                <div class="part d-none">
+                  <div class="form-row">
+                    <label>廣告走期</label><input id="a-time-start" class="w-25" name="a-time-start" type="date" required> - <input id="a-time-end" class="w-25" name="a-time-end" type="date" required></div>
+                  <div class="form-row"><label>廣告類別</label>
+                    <div class="select-wrapper w-25">
+                      <select name="a-type" id="a-type" required>
+                        <option value="" disabled selected>請選擇廣告類別</option>
+                        <option value="game">遊戲</option>
+                        <option value="fashion">時尚</option>
+                        <option value="travel">旅遊</option>
+                        <option value="shopping">購物</option>
+                        <option value="all">不拘</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="">受眾性別</label>
+                    <div class="d-flex">
+                      <input name="ta-gender" type="radio" value="male"><label for="">男</label>
+                      <input name="ta-gender" type="radio" value="female"><label for="">女</label>
+                      <input name="ta-gender" type="radio" value="all"><label for="">不拘</label>
+                    </div>
+                  </div>
+                  <div class="form-row"><label for="">受眾年齡</label><input type="number" min="13" max="65" value="13"> - <input type="number" min="13" max="65" value="65"></div>
+                  <div class="form-row "><label for="">受眾地點</label>
+                    <div class="select-wrapper w-25"><select name="a-type" id="a-location" required>
+                        <option value="" disabled selected>請選擇受眾地點</option>
+                        <option value="">北部</option>
+                        <option value="">中部</option>
+                        <option value="">南部</option>
+                        <option value="">中部</option>
+                        <option value="">不拘</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="part d-none">
+                  <div class="form-row"><label for="">銀行代碼</label><input id="bank-code" type="text" class="w-25" placeholder="請輸入銀行代碼"></div>
+                  <div class="form-row"><label for="">銀行帳號</label><input id="bank-account" type="text" class="w-50" placeholder="請輸入銀行帳號"></div>
+                  <div class="form-row"><label for="">帳戶姓名</label><input id="account-name" type="text" class="w-25" placeholder="請輸入帳戶姓名"></div>
+                  <div class="form-row"><label for="">備註</label><textarea id="note" class="w-75 scrollbar" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div id="btn-control" class="control-panel w-100 d-flex justify-content-end">
+                <button disabled class="btn btn-outline">上一步</button>
+                <button class="btn btn-primary">下一步</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
